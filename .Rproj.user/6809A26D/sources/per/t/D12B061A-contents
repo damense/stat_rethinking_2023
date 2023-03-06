@@ -1,0 +1,47 @@
+---
+title: "Lecture 01"
+format: html
+editor: visual
+---
+
+## Slides
+
+[Causal prediction]{.underline}: Knowing a cause means being able to predict the consequences.
+
+[Causal imputation]{.underline}: Knowing a cause means being able to construct unobserved counterfactual outcomes
+
+[DAG]{.underline}: Directed Acyclic Graphs (Heuristic causal models)
+
+Steps:
+
+1.  Theoretical estimand
+
+2.  Scientific causal model
+
+3.  Use 1 and 2 to build statistical model
+
+4.  Simulate from 2 to validate 3 yields 1
+
+5.  Analyze real data
+
+## Code
+
+(https://bookdown.org/content/4857/the-golem-of-prague.html)
+
+```{r}
+packages <- c("ape", "bayesplot", "brms", "broom", "dagitty", "devtools", "flextable", "GGally", "ggdag", "ggdark", "ggmcmc", "ggrepel", "ggthemes", "ggtree", "ghibli", "gtools", "invgamma", "loo", "patchwork", "posterior", "psych", "rcartocolor", "Rcpp", "remotes", "rstan", "santoku", "StanHeaders", "statebins", "tidybayes", "tidyverse", "viridis", "viridisLite", "wesanderson")
+
+install.packages(packages, dependencies = T)
+
+
+devtools::install_github("stan-dev/cmdstanr")
+devtools::install_github("EdwinTh/dutchmasters")
+devtools::install_github("gadenbuie/ggpomological")
+devtools::install_github("GuangchuangYu/ggtree")
+devtools::install_github("rmcelreath/rethinking")
+devtools::install_github("UrbanInstitute/urbnmapr")
+```
+
+```{r}
+sessionInfo()
+```
